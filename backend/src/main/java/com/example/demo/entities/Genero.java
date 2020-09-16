@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+
+
 @Entity 
 @Table(name="tb_genre")
 public class Genero implements Serializable {

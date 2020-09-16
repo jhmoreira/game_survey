@@ -16,6 +16,7 @@ import javax.persistence.Table;
 import com.example.demo.entities.enums.Plataforma;
 
 
+
 @Entity 
 @Table(name="tb_game")
 public class Game implements Serializable {
@@ -31,9 +32,11 @@ public class Game implements Serializable {
 	private String title;
 	private Plataforma platform;
 	
+	
 	@ManyToOne
 	@JoinColumn(name="genre_id")
 	private Genero genre;
+	
 	
 	@OneToMany(mappedBy="game")
 	private List< Record> records= new ArrayList<>();
