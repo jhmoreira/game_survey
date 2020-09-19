@@ -4,7 +4,7 @@ import './styles.css'
 import { RecordResponse } from './types';
 import {formatDate} from './helpers';
 import Pagination from './Pagination';
-import {Link} from 'react-router-dom'
+import Filter from '../../components/Filters';
 const baseURL = "http://localhost:8080";
 const Records = () => {
     const [recordsResponse, setRecordsResponse] = useState<RecordResponse>();
@@ -20,8 +20,7 @@ const[activePage,setActivePage]=useState(0);
     return (
 
         <div className="page-container">
-            <div className="filters-container records-actions"><Link to="/charts"> <button className="action-filters">
-                VISUALIZAR GRÁFICOS</button> </Link></div>
+            <Filter link="/charts" linkText="Ver Tabelas"/>
             <table className="records-table" cellPadding="0" cellSpacing="0">
                 <thead>
                     <tr>
