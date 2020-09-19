@@ -2,7 +2,7 @@
 
 
 ## Descrição do Projeto
-<p align="justify"> Projeto desenvolvido com o Back-end construido utilizando Spring Boot && Front-end desenvolvido utilzando React.JS </p>
+<p align="justify"> Projeto versão web desenvolvida com o Back-end construido utilizando Spring Boot e Front-end desenvolvido utilizando React.JS </p>
 
 
 ### O projeto apresenta:
